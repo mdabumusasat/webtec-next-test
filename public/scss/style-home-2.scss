@@ -1,0 +1,44 @@
+//Root 
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+//main theme colors
+$theme-color1: #ff3838;
+$theme-color2: #222222;
+$theme-color3: #13132E;
+
+:root {
+  --r: 30px; /* radius */
+  --s: 50px; /* size of the inner curve*/
+  --_m:/calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%,#0000 72%) no-repeat;
+  
+  //theme color
+  --theme-color1: #{$theme-color1};
+  --theme-color2: #{$theme-color2};
+  --theme-color3: #{$theme-color3};
+
+  //rgb version of those theme colors
+  --theme-color1-rgb: #{hexToRGB($theme-color1)};
+  --theme-color2-rgb: #{hexToRGB($theme-color2)};
+
+  --theme-color1-text-color: #ffffff;
+  --theme-color2-text-color: #ffffff;
+
+
+  --theme-color-white: #ffffff;
+  --theme-color-white-rgb: 255,255,255;
+  --theme-color-lighter: #F9F9F9;
+  --theme-color-lighter2: #FCFCFC;
+  --theme-color-silver: #9393A9;
+  --review-color: #FFAA18;
+
+  --theme-color-black: #000000;
+  --theme-color-black-rgb: 0, 0, 0;
+  --theme-color-dark:  #333;
+  --theme-color-dark2:  #130D1A;
+  --theme-color-gray:  #222222;
+}
+
+
+

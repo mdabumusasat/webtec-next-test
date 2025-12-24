@@ -1,0 +1,106 @@
+/*** 
+
+====================================================================
+    Feature Block
+====================================================================
+
+***/
+
+.features-section {
+  background-color: var(--theme-color2);
+  padding: 120px 0 90px;
+  .outer-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    @include media-breakpoint-down(lg){
+      grid-template-columns: auto auto;
+    }
+    @include media-breakpoint-down(sm){
+      grid-template-columns: auto;
+    }
+    .feature-block {
+      &:last-child {
+        .inner-block {
+          margin-right: 0;
+          padding-right: 0;
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.feature-block {
+  margin-bottom: 30px;
+  .inner-block{
+    position: relative;
+    margin-right: 70px;
+    padding-right: 70px;
+    @include media-breakpoint-down(xxl){
+      margin-right: 45px;
+      padding-right: 35px;
+    }
+    @include media-breakpoint-down(xl){
+      margin-right: 20px;
+      padding-right: 15px;
+    }
+    @include media-breakpoint-down(lg){
+      margin-right: 0;
+      padding-right: 0;
+    }
+    &:hover {
+      .icon-box {
+        background-color: var(--theme-color1);
+        border-color: var(--theme-color1);
+        i,img {
+          transform: scaleX(-1);
+        }
+      }
+    }
+    &:after {
+      background-color: rgba(var(--theme-color-white-rgb), .1);
+      border-radius: 10px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 1px;
+      @include media-breakpoint-down(lg){
+        display: none;
+      }
+    }
+    .icon-box {
+      background-color: rgba(var(--theme-color-white-rgb), .05);
+      border: 1px solid rgba(var(--theme-color-white-rgb), .1);
+      border-radius: 14px;
+      color: var(--theme-color1-text-color);
+      font-size: 36px;
+      height: 65px;
+      line-height: 60px;
+      text-align: center;
+      margin-bottom: 27px;
+      width: 65px;
+      @include transition(all 300ms ease);
+      i,img {
+        @include transition(all 300ms ease);
+      }
+    }
+    .title {
+      color: var(--theme-color2-text-color);
+      margin-bottom: 10px;
+    }
+    .text {
+      color: rgba(var(--theme-color-white-rgb), .65);
+      max-width: 220px;
+      @include media-breakpoint-down(xl){
+        font-size: 15px;
+      }
+      @include media-breakpoint-down(lg){
+        max-width: none;
+      }
+    }
+  }
+}
