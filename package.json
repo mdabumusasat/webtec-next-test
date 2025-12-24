@@ -21,6 +21,7 @@
     "next": "15.5.9",
     "rc-slider": "^11.1.9",
     "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-animated-slider": "^1.1.4",
     "react-circular-progressbar": "^2.1.0",
     "react-countup": "^6.4.1",
