@@ -22,10 +22,10 @@ const ContactSection = () => {
             <div className="col-xxl-7 col-xl-6"></div>
             <div className="form-column col-xxl-5 col-xl-6 order-2">
               <div className="inner-column ps-xl-3">
-                <div className="contact-form bg-transparent pt-30 pt-lg-40 pb-30 pb-lg-40 wow fadeInLeft">
+                <div className="contact-form bg-transparent pt-30 pt-lg-40 pb-30 pb-lg-40" data-aos="fade-left">
 
                   <div className="sec-title-h1 anim-text-flip-move">
-                    <h6 className="sub-title wow fadeInUp">Send Message</h6>
+                    <h6 className="sub-title" data-aos="fade-up">Send Message</h6>
                     <h2 className="title char-animation">
                       Crafting Digital <br /> Strategies That Work
                     </h2>

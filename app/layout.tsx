@@ -7,6 +7,7 @@ import "../public/css/style-home-2.css";
 import "../public/css/style-home-3.css";
 import "../public/css/style.css";
 import Preloader from "@/components/elements/Preloader";
+import AOSProvider from "@/components/providers/AOSProvider";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -32,8 +33,10 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth" className={`${dmSans.variable} ${inter.variable}`}>
       <body>
-        <Preloader />
-        {children}
+        <AOSProvider>
+          <Preloader />
+          {children}
+        </AOSProvider>
       </body>
     </html>
   );

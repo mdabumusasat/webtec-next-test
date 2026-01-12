@@ -27,7 +27,7 @@ const AboutSection = () => {
                     </div>
                 </div>
                 <div className="about-block-h1 col-xxl-5 col-xl-6 col-lg-12">
-                    <div className="inner-block wow fadeInUp" data-wow-delay="200ms">
+                    <div className="inner-block" data-aos="fade-up" data-aos-delay="200">
                         <div className="sec-title-h1">
                             <h6 className="sub-title">KNOW ABOUT US</h6>
                             <h2 className="title">

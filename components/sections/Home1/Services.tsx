@@ -21,8 +21,9 @@ const ServicesSectionH1 = () => {
                 <div className="auto-container">
                     <div className="row gx-3">
                     <div
-                        className="service-block col-xl-4 col-md-6 wow fadeInUp"
-                        data-wow-delay="400ms">
+                        className="service-block col-xl-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="400">
                         <div className="inner-block">
                         <div className="number">01</div>
                         <h4 className="title">Project Planning</h4>
@@ -37,8 +38,9 @@ const ServicesSectionH1 = () => {
                         </div>
                     </div>
                     <div
-                        className="service-block col-xl-4 col-md-6 wow fadeInUp"
-                        data-wow-delay="400ms">
+                        className="service-block col-xl-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="400">
                         <div className="inner-block">
                         <div className="number">02</div>
                         <h4 className="title">Development</h4>
@@ -53,8 +55,9 @@ const ServicesSectionH1 = () => {
                         </div>
                     </div>
                     <div
-                        className="service-block col-xl-4 col-md-6 wow fadeInUp"
-                        data-wow-delay="400ms">
+                        className="service-block col-xl-4 col-md-6"
+                        data-aos="fade-up"
+                        data-aos-delay="400">
                         <div className="inner-block mb-0">
                         <div className="number">03</div>
                         <h4 className="title">Quick Support</h4>

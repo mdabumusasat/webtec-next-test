@@ -1,11 +1,10 @@
 "use client";
 
-import { useEffect } from "react";
-import AOS from "aos";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
+import AOS from "aos";
 
 const services = [
   {
@@ -36,14 +35,6 @@ const services = [
 ];
 
 const KsServiceSectionH3 = () => {
-  useEffect(() => {
-    AOS.init({
-      once: true,
-      duration: 1000,
-      easing: "ease-in-out",
-    });
-    AOS.refresh();
-  }, []);
 
   return (
     <div className="ks-service-area ks-service-style-2">

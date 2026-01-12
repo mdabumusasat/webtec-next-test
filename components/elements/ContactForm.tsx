@@ -41,7 +41,7 @@ const ContactForm = () => {
     return (
         <>
 
-            <div className="contact-form wow fadeInLeft">
+            <div className="contact-form" data-aos="fade-left">
                 <div className="bg bg-pattern-1"></div>
                 <h3 className="title">Request A Quote</h3>
 
