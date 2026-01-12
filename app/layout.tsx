@@ -6,7 +6,6 @@ import "../public/css/animate.css";
 import "../public/css/aos.css";
 import "../public/css/swiper.min.css";
 import "../public/css/jquery.fancybox.min.css";
-import "../public/css/jquery-ui.css";
 import "../public/css/linear.css";
 import "../public/css/select2.min.css";
 import "../public/css/fontawesome.css";
