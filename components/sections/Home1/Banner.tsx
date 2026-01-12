@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 
 
-function Banner() {
+const Banner = () => {
   return (
     <section className="banner-section-h1">
       <div className="anim-icon"><img src="images/icons/banner-h1-2.png" alt="Image"/></div>
