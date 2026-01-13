@@ -2,7 +2,7 @@ import React from "react";
 import Link from 'next/link';
 
 
-function Banner() {
+const Banner = () => {
   return (
     <section className="banner-section-h1">
       <div className="anim-icon"><img src="images/icons/banner-h1-2.png" alt="Image"/></div>
@@ -15,9 +15,9 @@ function Banner() {
         <div className="inner-box">
           <div className="banner-content">
             <div className="inner-content">
-              <h1 className="banner-title wow fadeInUp" data-wow-delay="200ms">Your <span>Ultimate Digital</span> Agency</h1>
-              <div className="text wow fadeInUp" data-wow-delay="400ms">Highlights the partnership between the client’s vision and the agency’s technical and creative skills. Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna vision and the agency’s technical</div>
-              <div className="banner-info wow fadeInUp" data-wow-delay="600ms">
+              <h1 className="banner-title" data-aos="fade-up" data-aos-delay="200">Your <span>Ultimate Digital</span> Agency</h1>
+              <div className="text" data-aos="fade-up" data-aos-delay="400">Highlights the partnership between the client’s vision and the agency’s technical and creative skills. Proin efficitur, mauris vel condimentum pulvinar, velit orci consectetur ligula, eget egestas magna vision and the agency’s technical</div>
+              <div className="banner-info" data-aos="fade-up" data-aos-delay="600">
                 <Link href="/page-contact" className="theme-btn btn-style-one">
                   <span className="btn-arrow-left">
                     <i className="far fa-chevron-right"></i>

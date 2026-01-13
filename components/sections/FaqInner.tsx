@@ -30,7 +30,7 @@ const AccordionBox = ({ defaultActive = 0 }: { defaultActive?: number }) => {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <ul className="accordion-box wow fadeInRight">
+    <ul className="accordion-box" data-aos="fade-right">
       {faqData.map((item, index) => {
         const isActive = activeIndex === index;
         return (

@@ -29,17 +29,7 @@ License: copyright commercial
 22. News Section
 23. Main Footer
 **********************************************/
-@import url("animate.css");
-@import url("aos.css");
-@import url("swiper.min.css");
-@import url("jquery.fancybox.min.css");
-@import url("jquery-ui.css");
-@import url("linear.css");
-@import url("select2.min.css");
-@import url("fontawesome.css");
-@import url("font-gt-walsheim-pro.css");
-@import url("tm-bs-mp.css");
-@import url("tm-utility-classes.css");
+/* CSS files imported via @import url() have been moved to layout.tsx to avoid Next.js processing issues */
 @property --gradient-angle {
   syntax: "<angle>";
   initial-value: 90deg;
@@ -426,13 +416,13 @@ textarea.form-control {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-/*** 
+/* 
 
 ====================================================================
 Reset
 ====================================================================
 
-***/
+*/
 * {
   margin: 0px;
   padding: 0px;
@@ -441,13 +431,13 @@ Reset
   font-size: 100%;
 }
 
-/*** 
+/* 
 
 ====================================================================
 Global Settings
 ====================================================================
 
-***/
+*/
 textarea {
   overflow: hidden;
   resize: none;

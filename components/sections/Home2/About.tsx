@@ -8,7 +8,7 @@ const AboutSectionH2 = () => {
     <section className="about-section-h2">
         <div className="auto-container">
             <div className="row">
-                <div className="content-column col-xl-6 col-lg-8 order-xl-2 wow fadeInRight">
+                <div className="content-column col-xl-6 col-lg-8 order-xl-2" data-aos="fade-right">
                     <div className="inner-column">
                         <div className="sec-title-h2">
                             <h6 className="sub-title">KNOW ABOUT US</h6>

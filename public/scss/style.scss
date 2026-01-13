@@ -39,18 +39,7 @@ License: copyright commercial
 @import "common/loader.scss";
 
 // @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
-@import url('animate.css');
-@import url('aos.css');
-@import url('swiper.min.css');
-@import url('jquery.fancybox.min.css');
-@import url('jquery-ui.css');
-@import url('linear.css');
-@import url('select2.min.css');
-@import url('fontawesome.css');
-@import url('font-gt-walsheim-pro.css');
-@import url('tm-bs-mp.css');
-@import url('tm-utility-classes.css');
+// CSS files are imported directly in layout.tsx to avoid @import url() processing issues in Next.js
 
 
 // import SCSS components one by one

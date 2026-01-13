@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, ReactNode } from "react";
+import { useEffect, useState, ReactNode, useRef } from "react";
 import BackToTop from "../elements/BackToTop";
 import Footer from "./Footer";
 import Footer2 from "./Footer2";
@@ -30,14 +30,41 @@ const Layout = ({
 }: LayoutProps) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [isMobileMenuVisible, setIsMobileMenuVisible] = useState(false);
+  const bodyRef = useRef<HTMLBodyElement | null>(null);
 
-  const handleOpen = () => document.body.classList.add("mobile-menu-visible");
-  const handleRemove = () => document.body.classList.remove("mobile-menu-visible");
+  // Initialize body ref on mount
+  useEffect(() => {
+    bodyRef.current = document.body;
+  }, []);
+
+  // Sync mobile menu state with body class
+  useEffect(() => {
+    if (bodyRef.current) {
+      if (isMobileMenuVisible) {
+        bodyRef.current.classList.add("mobile-menu-visible");
+      } else {
+        bodyRef.current.classList.remove("mobile-menu-visible");
+      }
+    }
+  }, [isMobileMenuVisible]);
+
+  // Sync search popup state with body class
+  useEffect(() => {
+    if (bodyRef.current) {
+      if (isSearchOpen) {
+        bodyRef.current.classList.add("search-popup-visible");
+      } else {
+        bodyRef.current.classList.remove("search-popup-visible");
+      }
+    }
+  }, [isSearchOpen]);
+
+  const handleOpen = () => setIsMobileMenuVisible(true);
+  const handleRemove = () => setIsMobileMenuVisible(false);
 
   const handleToggle = () => {
-    const newState = !isSearchOpen;
-    setIsSearchOpen(newState);
-    document.body.classList.toggle("search-popup-visible", newState);
+    setIsSearchOpen((prev) => !prev);
   };
 
   useEffect(() => {
@@ -45,23 +72,6 @@ const Layout = ({
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  // useEffect(() => {
-  //   // Dynamically import and initialize WOW.js only on client side
-  //   const initWOW = async () => {
-  //     if (typeof window !== "undefined") {
-  //       try {
-  //         const WOW = (await import("wowjs")).WOW;
-  //         const wowInstance = new WOW({ live: false });
-  //         wowInstance.init();
-  //       } catch (error) {
-  //         console.error("Failed to initialize WOW.js:", error);
-  //       }
-  //     }
-  //   };
-
-  //   initWOW();
-  // }, []);
 
   const headerProps = {
     handleOpen,

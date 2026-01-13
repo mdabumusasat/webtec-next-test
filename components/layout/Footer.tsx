@@ -13,7 +13,7 @@ function Footer(){
           <div className="row align-items-center">
             {/* <!-- Footer Column --> */}
             <div className="footer-column col-lg-5">
-              <div className="footer-widget about-widget wow fadeInLeft">
+              <div className="footer-widget about-widget" data-aos="fade-left">
                 <div className="footer-logo"><img src="images/logo-1.png" alt="Image"/></div>
               </div>
             </div>
@@ -21,7 +21,7 @@ function Footer(){
             <div className="footer-column col-lg-2">
             </div>
             <div className="footer-column style-two col-lg-5">
-              <div className="footer-widget subscribe-widget wow fadeInLeft" data-wow-delay="200ms">
+              <div className="footer-widget subscribe-widget" data-aos="fade-left" data-aos-delay="200">
                 <h5 className="text">Get the latest inspiration & insights</h5>
                 <div className="subscribe-form-one">
                   <form method="post" action="#">
@@ -41,7 +41,7 @@ function Footer(){
           <hr className="mb-40"/>
           <div className="row">
             <div className="footer-column border-0 col-lg-5 col-sm-4">
-              <div className="footer-widget about-widget wow fadeInLeft">
+              <div className="footer-widget about-widget" data-aos="fade-left">
                 <div className="widget-content">
                   <div className="contact-area">
                     <div className="mb-3"><Link className="phone" href="#">+ (123) 456-7890</Link></div>
@@ -62,7 +62,7 @@ function Footer(){
             </div>
             <div className="footer-column style-two border-0 col-lg-5 col-sm-7">
               <div className="row d-block d-sm-flex">
-                <div className="footer-widget links-widget col wow fadeInLeft" data-wow-delay="400ms">
+                <div className="footer-widget links-widget col" data-aos="fade-left" data-aos-delay="400">
                   <h5 className="widget-title">Quick Link</h5>
                   <div className="widget-content mb-5 mb-sm-0">
                     <ul className="user-links">
@@ -74,7 +74,7 @@ function Footer(){
                     </ul>
                   </div>
                 </div>
-                <div className="footer-widget style-two links-widget col wow fadeInLeft" data-wow-delay="400ms">
+                <div className="footer-widget style-two links-widget col" data-aos="fade-left" data-aos-delay="400">
                   <h5 className="widget-title">Our Services</h5>
                   <div className="widget-content">
                     <ul className="user-links">

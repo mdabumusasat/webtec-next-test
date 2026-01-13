@@ -1,39 +1,8 @@
-# Webtec - Business & Finance Consulting Next.js Template
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-A modern, professional business and finance consulting template built with Next.js 15, TypeScript, and React 18.
+## Getting Started
 
-## 🚀 Features
-
-- ✅ Built with Next.js 15 (App Router)
-- ✅ TypeScript for type safety
-- ✅ 7 Homepage variants
-- ✅ Multiple inner pages (About, Services, Projects, Contact, Shop, etc.)
-- ✅ Fully responsive design
-- ✅ Dark mode support
-- ✅ Smooth animations (WOW.js, Framer Motion)
-- ✅ Contact forms with validation
-- ✅ SEO optimized
-- ✅ Performance optimized
-- ✅ Accessibility enhanced
-
-## 📋 Prerequisites
-
-- Node.js 18+
-- npm, yarn, pnpm, or bun
-
-## 🛠️ Installation
-
-1. Install dependencies:
-
-```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
-```
-
-2. Run the development server:
+First, run the development server:
 
 ```bash
 npm run dev
@@ -41,146 +10,31 @@ npm run dev
 yarn dev
 # or
 pnpm dev
+# or
+bun dev
 ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 🏗️ Build for Production
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-```bash
-npm run build
-npm run start
-```
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-## 📁 Project Structure
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-```
-Webtec-next/
-├── app/                    # Next.js app directory
-│   ├── api/               # API routes
-│   ├── layout.tsx         # Root layout
-│   └── page.tsx           # Home page
-├── components/
-│   ├── elements/          # Reusable UI elements
-│   ├── layout/            # Layout components (Header, Footer)
-│   └── sections/          # Page sections
-├── public/
-│   ├── css/              # Stylesheets
-│   ├── fonts/            # Font files
-│   └── images/           # Images and assets
-└── types/                # TypeScript type definitions
-```
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## 🎨 Available Pages
+## Learn More
 
-### Home Pages
-- `/` - Home 1
-- `/index-2` - Home 2
-- `/index-3` - Home 3
+To learn more about Next.js, take a look at the following resources:
 
-### Inner Pages
-- `/page-about` - About Us
-- `/page-services` - Services
-- `/page-service-details` - Service Details
-- `/page-projects` - Projects
-- `/page-project-details` - Project Details
-- `/page-team` - Team
-- `/page-team-details` - Team Member Details
-- `/page-pricing` - Pricing
-- `/page-faq` - FAQ
-- `/page-testimonial` - Testimonials
-- `/page-contact` - Contact
-- `/news-grid` - News/Blog Grid
-- `/news-details` - News/Blog Details
-- `/shop-products` - Shop Products
-- `/shop-products-sidebar` - Shop with Sidebar
-- `/shop-product-details` - Product Details
-- `/shop-cart` - Shopping Cart
-- `/shop-checkout` - Checkout
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## ⚙️ Configuration
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-### Contact Form Setup
+## Deploy on Vercel
 
-The contact forms use the `/api/contact` endpoint. To integrate with your email service:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1. Open `app/api/contact/route.ts`
-2. Implement your preferred email service (SendGrid, Mailgun, Resend, etc.)
-3. Update the API logic with your credentials
-
-Example with Resend:
-
-```typescript
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
-
-await resend.emails.send({
-  from: 'noreply@yourdomain.com',
-  to: 'contact@yourdomain.com',
-  subject: 'New Contact Form Submission',
-  html: `<p>Name: ${body.form_name}</p>...`
-});
-```
-
-### Dark Mode
-
-Dark mode is controlled via the Layout component. Users can toggle between light and dark themes.
-
-### Customization
-
-1. **Colors**: Update `public/css/style.css` and `public/css/style-dark.css`
-2. **Fonts**: Modify font imports in `app/layout.tsx`
-3. **Images**: Replace images in `public/images/`
-4. **Content**: Update component files in `components/sections/`
-
-## 🔧 Technologies Used
-
-- **Next.js 15** - React framework
-- **React 18** - UI library
-- **TypeScript** - Type safety
-- **Swiper** - Modern slider
-- **WOW.js** - Scroll animations
-- **Framer Motion** - Advanced animations
-- **React CountUp** - Animated counters
-- **Bootstrap 5** - CSS framework (customized)
-
-## 📱 Browser Support
-
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
-
-## 🐛 Troubleshooting
-
-### Build Errors
-
-If you encounter build errors:
-
-1. Delete `node_modules` and `.next` folders
-2. Run `npm install` again
-3. Run `npm run build`
-
-### Form Submissions Not Working
-
-1. Verify the `/api/contact` route is properly configured
-2. Check browser console for errors
-3. Ensure your email service credentials are correct
-
-## 📝 License
-
-This template is licensed for use according to ThemeForest's standard license terms.
-
-## 🤝 Support
-
-For support, please contact through ThemeForest or open an issue in the repository.
-
-## 🔄 Updates
-
-Check for updates regularly to get new features, bug fixes, and improvements.
-
----
-
-Built with ❤️ using Next.js
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

@@ -59,8 +59,9 @@ const ProjectSectionH1 = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="project-block-h1 col-xl-4 col-md-6 wow fadeInUp"
-              data-wow-delay={project.delay}>
+              className="project-block-h1 col-xl-4 col-md-6"
+              data-aos="fade-up"
+              data-aos-delay={project.delay}>
               <div className="inner-block">
                 <div className="image">
                   <Link href="/page-project-details">
@@ -92,8 +93,9 @@ const ProjectSectionH1 = () => {
             </div>
           ))}
           <div
-            className="btn-box col-lg-12 text-center wow fadeInUp"
-            data-wow-delay="650ms">
+            className="btn-box col-lg-12 text-center"
+            data-aos="fade-up"
+            data-aos-delay="650">
             <Link href="/page-project-details" className="theme-btn btn-style-two">
               <span className="btn-arrow-left">
                 <i className="far fa-chevron-right"></i>

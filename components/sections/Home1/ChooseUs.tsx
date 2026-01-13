@@ -37,7 +37,7 @@ const WhyChooseUsSectionH1 = () => {
                     </div>
                     </div>
                 </div>
-                <div className="content-column col-xl-6 col-md-12 col-sm-12 wow fadeInLeft">
+                <div className="content-column col-xl-6 col-md-12 col-sm-12" data-aos="fade-left">
                     <div className="inner-column">
                         <div className="anim-icon bounce-y">
                             <Image src={animIcon} alt="Animated Icon" />
